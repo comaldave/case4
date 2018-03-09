@@ -17,6 +17,26 @@
 
 
 
+/*------------------------------------*\
+  #CUSTOM PROPERTIES SECTION
+\*------------------------------------*/
+
+:root {
+  --primary-color: #ffb300;
+  --primary-text: black;
+  --p-light-color: #ffe54c;
+  --p-light-text: black;
+  --p-dark-color: #c68400;
+  --p-dark-text: white;
+  --secondary-color: #b71c1c;
+  --secondary-text: black;
+  --s-light-color: #f05545;
+  --s-light-text: black;
+  --s-dark-color: #7f0000;
+  --s-dark-text: white;
+}
+
+
 
 /*------------------------------------*\
   #GLOBAL SECTION
@@ -29,6 +49,8 @@ html {
 h1,
 h2 {
 	text-align: center;
+	background-color: var(--p-dark-color);
+	color: var(--p-dark-text);
 }
 
 p {
@@ -53,7 +75,7 @@ body {
 }	
  
 body > header {
-	background-color: rgb(82,71,55);
+	background-color: var(--p-dark-color);
 	height: 150px;
 	padding-top: 10px;
 	padding-bottom: 10px; 
@@ -86,7 +108,7 @@ content {
 \*------------------------------------*/ 
 	
 nav.stories-inside {
-	background-color: rgb(182,153,155);
+	background-color: var(--primary-color);
 	float: right;
 	width: 79%;
 	display: vertical;
@@ -180,17 +202,18 @@ article figure {
 	float: right;
 	text-align: center;
 	box-shadow: 4px 4px;
+	background-color: var(--primary-color);
 }
 
 article#Story1 figure  {
 	position: relative;
 }
 article#Story1 {
-	background-color: rgb(141,116,113);
+	background-color: var(--p-light-color);
 }
 
 article#Story2 {
-	background-color:rgb(167,143,147);
+	background-color:#f5fd67;
 }
 article#Story2 p:first-of-type {
 	padding-top: 35px;
@@ -202,7 +225,7 @@ article#Story3::after {
 	display: table;
 }
 article#Story3 {
-	background-color: rgb(185,141,154);
+	background-color: var(--p-light-color);
 }
 
 
@@ -214,7 +237,7 @@ article#Story3 {
 \*------------------------------------*/
 
 aside {
-	background-color: rgba(82,71,55,0.7);
+	background-color: var(--s-light-color);
 	display: block;
 	width: 80%;
 	margin-left: auto;
@@ -231,8 +254,10 @@ aside li {
 	padding-left:15px;
 }
 
-
-
+aside h1 {
+	background-color: var(--s-dark-color);
+	color: var(--s-dark-text);
+}
 
 
 /*------------------------------------*\
@@ -240,13 +265,15 @@ aside li {
 \*------------------------------------*/
 
 footer{  
-	background-color: rgba(82,71,55,0.9);
+	background-color: var(--p-dark-color);
 	font: ivory;
 	width:100%;
 	font-size: 0.9em;
 	clear:both;
 	content: "";
 	display: table;
+	text-align: center;
+	color: var(--p-dark-text);
 }
 
 
